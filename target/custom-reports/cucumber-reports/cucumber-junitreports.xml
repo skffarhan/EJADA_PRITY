@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="18.179" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Books Api TestCase" name="TC_002_POST_API_With Token" time="17.927">
+<system-out><![CDATA[
+Given Requesting "BaseURI"..................................................passed
+Given Load Testdata form Specific Api sheet "BOOKS-API".....................passed
+Then Create Input File for json from Excel Sheet............................passed
+Then I go to "/api-clients/" and "POST" Api Request Saved in Json File "PostTestData.json" without charset.passed
+Then Save Final Response in "PostClientTokenResponse.json" output File......passed
+Then Get the Token Number From "accessToken" Response.......................passed
+Then I go to "/orders" and "POST" Api Request Saved in Json File "CreateOrderidTestData.json" with Barear Token.passed
+Then Get the Order Number From "orderId" Response...........................passed
+Then Save Final Response in "PostOrderIDResponse.json" output File..........passed
+Then I go to "/orders/:" and "PATCH" Api Request Saved in Json File "PatchjasonTestData.json" with Barear Token.passed
+Then Save Final Response in "PatchOrderResponse.json" output File...........passed
+Then I am validating object "error" for string value "No order with id :." For "Order"..passed
+Then I go to "/orders/:" and "DELETE" Api Request Saved in Json File "DeleteTestdataRequest.json" with Barear Token.passed
+Then Save Final Response in "DeleteTestdataResponse.json" output File.......passed
+]]></system-out>
+</testcase>
+</testsuite>
